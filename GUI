@@ -920,7 +920,7 @@ TextLabel_10.BorderSizePixel = 0
 TextLabel_10.Position = UDim2.new(0.00999999978, 0, -0.0166666657, 0)
 TextLabel_10.Size = UDim2.new(0, 382, 0, 48)
 TextLabel_10.Font = Enum.Font.GothamSemibold
-TextLabel_10.Text = "By: S^X devs, exx and Sirius"
+TextLabel_10.Text = "By: Moon , exx and Sirius"
 TextLabel_10.TextColor3 = Color3.fromRGB(133, 139, 140)
 TextLabel_10.TextSize = 14.000
 
