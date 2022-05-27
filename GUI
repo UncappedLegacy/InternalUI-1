@@ -3664,7 +3664,7 @@ local function IQXTM_fake_script() -- ExecEsp.LocalScript
 			boxes = true,
 			boxesTransparency = 1,
 			boxesColor = Color3.new(1, 1, 1),
-			boxFill = true,
+			boxFill = false,
 			boxFillTransparency = 0.5,
 			boxFillColor = Color3.new(1, 1, 1),
 			healthBars = true,
@@ -3679,10 +3679,10 @@ local function IQXTM_fake_script() -- ExecEsp.LocalScript
 			distanceTransparency = 1,
 			distanceSuffix = " Studs",
 			distanceColor = Color3.new(1, 1, 1),
-			tracers = false,
+			tracers = true,
 			tracerTransparency = 1,
 			tracerColor = Color3.new(1, 1, 1),
-			tracerOrigin = "Bottom", -- Available [Mouse, Top, Bottom]
+			tracerOrigin = "Mouse", -- Available [Mouse, Top, Bottom]
 		}
 		espLib.Init()
 	end)
