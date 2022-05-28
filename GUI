@@ -648,7 +648,7 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.0439276472, 0, 0.0677966103, 0)
 TextLabel_4.Size = UDim2.new(0, 350, 0, 27)
 TextLabel_4.Font = Enum.Font.GothamSemibold
-TextLabel_4.Text = "Internal executor made by Ducky#3622"
+TextLabel_4.Text = "Internal executor made by Spectre#9847"
 TextLabel_4.TextColor3 = Color3.fromRGB(133, 139, 140)
 TextLabel_4.TextSize = 14.000
 
