@@ -68,6 +68,7 @@ local ImageLabel_3 = Instance.new("ImageLabel")
 local Seperator_3 = Instance.new("Frame")
 local SelectedFrame_3 = Instance.new("Frame")
 local ExecutorFrame = Instance.new("Frame")
+local Key = "aqawnBtbKbOvHRmPKsAj"
 local Frame = Instance.new("ScrollingFrame")
 local TextBox = Instance.new("TextBox")
 local TextLabel_6 = Instance.new("TextLabel")
@@ -98,6 +99,18 @@ local ScriptHub = Instance.new("TextButton")
 local ImageLabel_4 = Instance.new("ImageLabel")
 local Seperator_4 = Instance.new("Frame")
 local SelectedFrame_4 = Instance.new("Frame")
+local KeySystem = Instance.new("Frame")
+local Input = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local Frame_4 = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local CheckKey = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local KeyInput = Instance.new("TextBox")
+local UICorner_28 = Instance.new("UICorner")
+local TextLabel_11 = Instance.new("TextLabel")
+local UICorner_29 = Instance.new("UICorner")
 
 --Properties:
 
@@ -109,22 +122,22 @@ Shadow.Parent = Block
 Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
 Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Shadow.BackgroundTransparency = 1.000
-Shadow.Position = UDim2.new(0.571948171, 0, 0.483736515, 10)
-Shadow.Size = UDim2.new(0, 577, 0, 398)
+Shadow.Position = UDim2.new(0.598472834, 0, 0.500477195, 10)
+Shadow.Size = UDim2.new(0, 601, 0, 414)
 Shadow.Image = "rbxassetid://9313765853"
 Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
 Shadow.ImageTransparency = 0.400
 Shadow.ScaleType = Enum.ScaleType.Slice
 Shadow.SliceCenter = Rect.new(45, 45, 45, 45)
 Shadow.SliceScale = 1.300
-Shadow.Draggable = true
 Shadow.Active = true
+Shadow.Draggable = true
 
 Main.Name = "Main"
 Main.Parent = Shadow
 Main.BackgroundColor3 = Color3.fromRGB(44, 48, 52)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.0371408835, 0, 0.057484746, 0)
+Main.Position = UDim2.new(0.0562877953, 0, 0.0736427456, 0)
 Main.Size = UDim2.new(0, 533, 0, 352)
 
 SeperatorX.Name = "SeperatorX"
@@ -348,7 +361,7 @@ Changelog_3.BorderSizePixel = 0
 Changelog_3.Position = UDim2.new(0.038609203, 0, 0.711481094, 0)
 Changelog_3.Size = UDim2.new(0, 269, 0, 25)
 Changelog_3.Font = Enum.Font.GothamSemibold
-Changelog_3.Text = "[+] Script Hub"
+Changelog_3.Text = "[+] Scripts"
 Changelog_3.TextColor3 = Color3.fromRGB(133, 139, 140)
 Changelog_3.TextSize = 14.000
 Changelog_3.TextWrapped = true
@@ -552,7 +565,7 @@ Misc.Name = "Misc"
 Misc.Parent = ScrollingFrame
 Misc.BackgroundColor3 = Color3.fromRGB(44, 48, 52)
 Misc.BorderSizePixel = 0
-Misc.Position = UDim2.new(0.0289999992, 0, 0.391000003, 0)
+Misc.Position = UDim2.new(0.0289999992, 0, 0.39199999, 0)
 Misc.Size = UDim2.new(0, 387, 0, 48)
 
 UICorner_12.CornerRadius = UDim.new(0, 3)
@@ -703,21 +716,9 @@ Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(-0.00173473824, 0, -0.00264609442, 0)
 Frame.Size = UDim2.new(0, 410, 0, 217)
 Frame.ScrollBarThickness = 5
-Frame.ScrollingDirection = "XY"
-Frame.ScrollingEnabled = true
 Frame.ScrollBarImageColor3 = Color3.fromRGB(114, 119, 120)
-Frame.AutomaticCanvasSize = "XY"
-Frame.SizeConstraint = "RelativeXY"
-Frame.CanvasSize = UDim2.new(0,0,2,0)
-Frame.AutomaticSize = "None"
-Frame.SizeConstraint = "RelativeXY"
-Frame.ClipsDescendants = true
-Frame.AutoLocalize = true
-Frame.ElasticBehavior = "WhenScrollable"
-Frame.HorizontalScrollBarInset = "None"
 Frame.ScrollBarImageTransparency = 0.75
-
-
+Frame.AutomaticCanvasSize = "XY"
 
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -959,17 +960,98 @@ SelectedFrame_4.BorderSizePixel = 0
 SelectedFrame_4.Size = UDim2.new(0, 2, 0, 42)
 SelectedFrame_4.Visible = false
 
+KeySystem.Name = "KeySystem"
+KeySystem.Parent = Main
+KeySystem.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KeySystem.BackgroundTransparency = 0.650
+KeySystem.BorderSizePixel = 0
+KeySystem.Size = UDim2.new(0, 532, 0, 351)
+
+Input.Name = "Input"
+Input.Parent = KeySystem
+Input.BackgroundColor3 = Color3.fromRGB(44, 48, 52)
+Input.BorderSizePixel = 0
+Input.Position = UDim2.new(0.240681469, 0, 0.267806262, 0)
+Input.Size = UDim2.new(0, 275, 0, 165)
+
+UICorner_25.CornerRadius = UDim.new(0, 3)
+UICorner_25.Parent = Input
+
+Frame_4.Parent = Input
+Frame_4.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0.641979873, 0)
+Frame_4.Size = UDim2.new(0, 275, 0, 59)
+
+UICorner_26.CornerRadius = UDim.new(0, 3)
+UICorner_26.Parent = Frame_4
+
+ImageLabel_5.Parent = Frame_4
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.114727274, 0, -0.796999991, 38)
+ImageLabel_5.Size = UDim2.new(0, 210, 0, 79)
+ImageLabel_5.Image = "rbxassetid://9313765853"
+ImageLabel_5.ImageColor3 = Color3.fromRGB(88, 101, 242)
+ImageLabel_5.ScaleType = Enum.ScaleType.Slice
+ImageLabel_5.SliceCenter = Rect.new(45, 45, 45, 45)
+ImageLabel_5.SliceScale = 0.750
+
+CheckKey.Name = "CheckKey"
+CheckKey.Parent = ImageLabel_5
+CheckKey.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+CheckKey.BorderSizePixel = 0
+CheckKey.Position = UDim2.new(0.0975942239, 0, 0.225875348, 0)
+CheckKey.Size = UDim2.new(0, 165, 0, 41)
+CheckKey.Font = Enum.Font.GothamSemibold
+CheckKey.Text = "Enter"
+CheckKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+CheckKey.TextSize = 13.000
+
+UICorner_27.CornerRadius = UDim.new(0, 3)
+UICorner_27.Parent = CheckKey
+
+KeyInput.Name = "KeyInput"
+KeyInput.Parent = Input
+KeyInput.BackgroundColor3 = Color3.fromRGB(34, 38, 42)
+KeyInput.BorderSizePixel = 0
+KeyInput.Position = UDim2.new(0.0618181862, 0, 0.291979849, 0)
+KeyInput.Size = UDim2.new(0, 240, 0, 41)
+KeyInput.Font = Enum.Font.GothamSemibold
+KeyInput.PlaceholderText = "Enter key here..."
+KeyInput.Text = ""
+KeyInput.TextColor3 = Color3.fromRGB(133, 139, 140)
+KeyInput.TextSize = 12.000
+
+UICorner_28.CornerRadius = UDim.new(0, 3)
+UICorner_28.Parent = KeyInput
+
+TextLabel_11.Parent = Input
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Size = UDim2.new(0, 275, 0, 45)
+TextLabel_11.Font = Enum.Font.GothamSemibold
+TextLabel_11.Text = "Spectre Key System"
+TextLabel_11.TextColor3 = Color3.fromRGB(133, 139, 140)
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextStrokeColor3 = Color3.fromRGB(133, 139, 140)
+
+UICorner_29.CornerRadius = UDim.new(0, 3)
+UICorner_29.Parent = KeySystem
+
 -- Scripts:
 
-local function IEJAIIT_fake_script() -- Exit.LocalScript 
+local function GULO_fake_script() -- Exit.LocalScript 
 	local script = Instance.new('LocalScript', Exit)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Enabled = false
 	end)
 end
-coroutine.wrap(IEJAIIT_fake_script)()
-local function PECT_fake_script() -- Home.LocalScript 
+coroutine.wrap(GULO_fake_script)()
+local function LJJKJVQ_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1000,8 +1082,8 @@ local function PECT_fake_script() -- Home.LocalScript
 		script.Parent.Parent.ScriptFrame.Visible = false
 	end)
 end
-coroutine.wrap(PECT_fake_script)()
-local function FESYS_fake_script() -- Executor.LocalScript 
+coroutine.wrap(LJJKJVQ_fake_script)()
+local function XTZYW_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1032,8 +1114,8 @@ local function FESYS_fake_script() -- Executor.LocalScript
 		script.Parent.Parent.ScriptFrame.Visible = false
 	end)
 end
-coroutine.wrap(FESYS_fake_script)()
-local function AACWXG_fake_script() -- HomeFrame.LocalScript 
+coroutine.wrap(XTZYW_fake_script)()
+local function AFLT_fake_script() -- HomeFrame.LocalScript 
 	local script = Instance.new('LocalScript', HomeFrame)
 
 	local frame = script.Parent
@@ -1046,8 +1128,8 @@ local function AACWXG_fake_script() -- HomeFrame.LocalScript
 	frame.PlayerIcon.Image = Content
 	frame.PlayerName.Text = player.DisplayName
 end
-coroutine.wrap(AACWXG_fake_script)()
-local function FEPEN_fake_script() -- ApplyJp.LocalScript 
+coroutine.wrap(AFLT_fake_script)()
+local function JOZUWHU_fake_script() -- ApplyJp.LocalScript 
 	local script = Instance.new('LocalScript', ApplyJp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1055,40 +1137,40 @@ local function FEPEN_fake_script() -- ApplyJp.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.JpInput.Text
 	end)
 end
-coroutine.wrap(FEPEN_fake_script)()
-local function CHUP_fake_script() -- ApplyWs.LocalScript 
+coroutine.wrap(JOZUWHU_fake_script)()
+local function XYNHZH_fake_script() -- ApplyWs.LocalScript 
 	local script = Instance.new('LocalScript', ApplyWs)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.WsInput.Text
 	end)
 end
-coroutine.wrap(CHUP_fake_script)()
-local function CHPC_fake_script() -- ApplyGrav.LocalScript 
+coroutine.wrap(XYNHZH_fake_script)()
+local function MBLZR_fake_script() -- ApplyGrav.LocalScript 
 	local script = Instance.new('LocalScript', ApplyGrav)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Workspace.Gravity = script.Parent.Parent.GravInput.Text
 	end)
 end
-coroutine.wrap(CHPC_fake_script)()
-local function RPTA_fake_script() -- Reset.LocalScript 
+coroutine.wrap(MBLZR_fake_script)()
+local function HEMW_fake_script() -- Reset.LocalScript 
 	local script = Instance.new('LocalScript', Reset)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 	end)
 end
-coroutine.wrap(RPTA_fake_script)()
-local function NIPUBP_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(HEMW_fake_script)()
+local function DMLEE_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId);
 	end)
 end
-coroutine.wrap(NIPUBP_fake_script)()
-local function RXAAS_fake_script() -- IJ.LocalScript 
+coroutine.wrap(DMLEE_fake_script)()
+local function UVFQ_fake_script() -- IJ.LocalScript 
 	local script = Instance.new('LocalScript', IJ)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1101,16 +1183,18 @@ local function RXAAS_fake_script() -- IJ.LocalScript
 		end)	
 	end)
 end
-coroutine.wrap(RXAAS_fake_script)()
-local function AQUUNN_fake_script() -- ServerHop.LocalScript 
+coroutine.wrap(UVFQ_fake_script)()
+local function NPSIPYM_fake_script() -- ServerHop.LocalScript 
 	local script = Instance.new('LocalScript', ServerHop)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/KeoneGithub/KeoneGithub/main/ServerHopperUniversal"))()
+		local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+
+		module:Teleport(game.PlaceId)
 	end)
 end
-coroutine.wrap(AQUUNN_fake_script)()
-local function AKYVFP_fake_script() -- Player.LocalScript 
+coroutine.wrap(NPSIPYM_fake_script)()
+local function DOMIN_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1141,8 +1225,8 @@ local function AKYVFP_fake_script() -- Player.LocalScript
 		script.Parent.Parent.ScriptFrame.Visible = false
 	end)
 end
-coroutine.wrap(AKYVFP_fake_script)()
-local function MDBN_fake_script() -- ExecutorFrame.LocalScript 
+coroutine.wrap(DOMIN_fake_script)()
+local function TUTOP_fake_script() -- ExecutorFrame.LocalScript 
 	local script = Instance.new('LocalScript', ExecutorFrame)
 
 	Colors = {
@@ -1161,8 +1245,8 @@ local function MDBN_fake_script() -- ExecutorFrame.LocalScript
 	
 	
 end
-coroutine.wrap(MDBN_fake_script)()
-local function EJXOBLB_fake_script() -- Frame.LocalScript 
+coroutine.wrap(TUTOP_fake_script)()
+local function ZONVYY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Syn = {
@@ -1215,8 +1299,8 @@ local function EJXOBLB_fake_script() -- Frame.LocalScript
 	
 	}
 end
-coroutine.wrap(EJXOBLB_fake_script)()
-local function QAVLH_fake_script() -- TextBox.allow_newline 
+coroutine.wrap(ZONVYY_fake_script)()
+local function IZJPBL_fake_script() -- TextBox.allow_newline 
 	local script = Instance.new('LocalScript', TextBox)
 
 	script.Parent.FocusLost:Connect(function(eP)
@@ -1226,8 +1310,8 @@ local function QAVLH_fake_script() -- TextBox.allow_newline
 	end
 	end)
 end
-coroutine.wrap(QAVLH_fake_script)()
-local function IHDTGD_fake_script() -- TextLabel_6.HIGHLIGHT_WIPWIP 
+coroutine.wrap(IZJPBL_fake_script)()
+local function VFUF_fake_script() -- TextLabel_6.HIGHLIGHT_WIPWIP 
 	local script = Instance.new('LocalScript', TextLabel_6)
 
 	aSyn = {
@@ -1422,32 +1506,32 @@ local function IHDTGD_fake_script() -- TextLabel_6.HIGHLIGHT_WIPWIP
 	
 	
 end
-coroutine.wrap(IHDTGD_fake_script)()
-local function EBCYBFQ_fake_script() -- Execute.LocalScript 
+coroutine.wrap(VFUF_fake_script)()
+local function IBMKCL_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.Frame.TextBox.Text)()
 	end)
 end
-coroutine.wrap(EBCYBFQ_fake_script)()
-local function UPLZDSW_fake_script() -- Clear.LocalScript 
+coroutine.wrap(IBMKCL_fake_script)()
+local function DQPYQVP_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Frame.TextBox.Text = ""
 	end)
 end
-coroutine.wrap(UPLZDSW_fake_script)()
-local function VTVKV_fake_script() -- ExecDex.LocalScript 
+coroutine.wrap(DQPYQVP_fake_script)()
+local function EAJETK_fake_script() -- ExecDex.LocalScript 
 	local script = Instance.new('LocalScript', ExecDex)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
 	end)
 end
-coroutine.wrap(VTVKV_fake_script)()
-local function RHGOWA_fake_script() -- ExecRemote.LocalScript 
+coroutine.wrap(EAJETK_fake_script)()
+local function IUUKNN_fake_script() -- ExecRemote.LocalScript 
 	local script = Instance.new('LocalScript', ExecRemote)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3627,8 +3711,8 @@ local function RHGOWA_fake_script() -- ExecRemote.LocalScript
 		)
 	end)
 end
-coroutine.wrap(RHGOWA_fake_script)()
-local function IQXTM_fake_script() -- ExecEsp.LocalScript 
+coroutine.wrap(IUUKNN_fake_script)()
+local function HJWJDPP_fake_script() -- ExecEsp.LocalScript 
 	local script = Instance.new('LocalScript', ExecEsp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3664,7 +3748,7 @@ local function IQXTM_fake_script() -- ExecEsp.LocalScript
 			boxes = true,
 			boxesTransparency = 1,
 			boxesColor = Color3.new(1, 1, 1),
-			boxFill = false,
+			boxFill = true,
 			boxFillTransparency = 0.5,
 			boxFillColor = Color3.new(1, 1, 1),
 			healthBars = true,
@@ -3679,16 +3763,16 @@ local function IQXTM_fake_script() -- ExecEsp.LocalScript
 			distanceTransparency = 1,
 			distanceSuffix = " Studs",
 			distanceColor = Color3.new(1, 1, 1),
-			tracers = true,
+			tracers = false,
 			tracerTransparency = 1,
 			tracerColor = Color3.new(1, 1, 1),
-			tracerOrigin = "Mouse", -- Available [Mouse, Top, Bottom]
+			tracerOrigin = "Bottom", -- Available [Mouse, Top, Bottom]
 		}
 		espLib.Init()
 	end)
 end
-coroutine.wrap(IQXTM_fake_script)()
-local function CZVKLDN_fake_script() -- ScriptHub.LocalScript 
+coroutine.wrap(HJWJDPP_fake_script)()
+local function TJQD_fake_script() -- ScriptHub.LocalScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3719,8 +3803,21 @@ local function CZVKLDN_fake_script() -- ScriptHub.LocalScript
 		script.Parent.Parent.ExecutorFrame.Visible = false
 	end)
 end
-coroutine.wrap(CZVKLDN_fake_script)()
-local function VYXV_fake_script() -- Block.LocalScript 
+coroutine.wrap(TJQD_fake_script)()
+local function EUIRJ_fake_script() -- CheckKey.LocalScript 
+	local script = Instance.new('LocalScript', CheckKey)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.Parent.KeyInput.Text == Key then
+			script.Parent.Parent.Parent.Parent.Parent.Parent.KeySystem.Visible = false
+		else
+			script.Parent.Parent.Parent.Parent.KeyInput.Text = ""
+			script.Parent.Parent.Parent.Parent.KeyInput.PlaceholderText = "Incorrect Key..."
+		end
+	end)
+end
+coroutine.wrap(EUIRJ_fake_script)()
+local function PEJTF_fake_script() -- Block.LocalScript 
 	local script = Instance.new('LocalScript', Block)
 
 	local FrameObject = script.Parent -- Change Stats to whatever your frame is called
@@ -3738,4 +3835,4 @@ local function VYXV_fake_script() -- Block.LocalScript
 		
 	end)
 end
-coroutine.wrap(VYXV_fake_script)()
+coroutine.wrap(PEJTF_fake_script)()
