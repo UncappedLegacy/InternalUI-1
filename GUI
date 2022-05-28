@@ -648,7 +648,7 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.0439276472, 0, 0.0677966103, 0)
 TextLabel_4.Size = UDim2.new(0, 350, 0, 27)
 TextLabel_4.Font = Enum.Font.GothamSemibold
-TextLabel_4.Text = "Internal executor made by Spectre#9847"
+TextLabel_4.Text = "Internal executor made by Ducky#3622"
 TextLabel_4.TextColor3 = Color3.fromRGB(133, 139, 140)
 TextLabel_4.TextSize = 14.000
 
@@ -3748,7 +3748,7 @@ local function HJWJDPP_fake_script() -- ExecEsp.LocalScript
 			boxes = true,
 			boxesTransparency = 1,
 			boxesColor = Color3.new(1, 1, 1),
-			boxFill = true,
+			boxFill = false,
 			boxFillTransparency = 0.5,
 			boxFillColor = Color3.new(1, 1, 1),
 			healthBars = true,
@@ -3763,10 +3763,10 @@ local function HJWJDPP_fake_script() -- ExecEsp.LocalScript
 			distanceTransparency = 1,
 			distanceSuffix = " Studs",
 			distanceColor = Color3.new(1, 1, 1),
-			tracers = false,
+			tracers = true,
 			tracerTransparency = 1,
 			tracerColor = Color3.new(1, 1, 1),
-			tracerOrigin = "Bottom", -- Available [Mouse, Top, Bottom]
+			tracerOrigin = "Mouse", -- Available [Mouse, Top, Bottom]
 		}
 		espLib.Init()
 	end)
