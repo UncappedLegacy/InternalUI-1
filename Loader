@@ -1,0 +1,326 @@
+local Loader = Instance.new("ScreenGui")
+local Shadow = Instance.new("ImageLabel")
+local Selector = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local Block = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Module = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Key = "Test"
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Shadow2 = Instance.new("ImageLabel")
+local KeySystem = Instance.new("Frame")
+local Input = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Frame_4 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local CheckKey = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local KeyInput = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+
+--Properties:
+
+Loader.Name = "Loader"
+Loader.Parent = game.CoreGui
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Loader
+Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.BackgroundTransparency = 1.000
+Shadow.Position = UDim2.new(0.499466956, 0, 0.482488304, 10)
+Shadow.Size = UDim2.new(0, 389, 0, 246)
+Shadow.Visible = false
+Shadow.Image = "rbxassetid://9313765853"
+Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.ImageTransparency = 0.400
+Shadow.ScaleType = Enum.ScaleType.Slice
+Shadow.SliceCenter = Rect.new(45, 45, 45, 45)
+Shadow.SliceScale = 1.300
+
+Selector.Name = "Selector"
+Selector.Parent = Shadow
+Selector.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+Selector.BorderSizePixel = 0
+Selector.Position = UDim2.new(0.0834989399, 0, 0.0829053074, 0)
+Selector.Size = UDim2.new(0, 324, 0, 205)
+
+Frame.Parent = Selector
+Frame.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.690619051, 0)
+Frame.Size = UDim2.new(0, 324, 0, 63)
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = Frame
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.00300000003, 0, -0.698000014, 38)
+ImageLabel.Size = UDim2.new(0, 169, 0, 79)
+ImageLabel.Image = "rbxassetid://9313765853"
+ImageLabel.ImageColor3 = Color3.fromRGB(88, 101, 242)
+ImageLabel.ScaleType = Enum.ScaleType.Slice
+ImageLabel.SliceCenter = Rect.new(45, 45, 45, 45)
+ImageLabel.SliceScale = 0.750
+
+Block.Name = "Block"
+Block.Parent = ImageLabel
+Block.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+Block.BorderSizePixel = 0
+Block.Position = UDim2.new(0.0802164823, 0, 0.238533497, 0)
+Block.Size = UDim2.new(0, 140, 0, 41)
+Block.Font = Enum.Font.GothamSemibold
+Block.Text = "Block"
+Block.TextColor3 = Color3.fromRGB(255, 255, 255)
+Block.TextSize = 13.000
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = Block
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.477999985, 0, -0.698000014, 38)
+ImageLabel_2.Size = UDim2.new(0, 169, 0, 79)
+ImageLabel_2.Image = "rbxassetid://9313765853"
+ImageLabel_2.ImageColor3 = Color3.fromRGB(88, 101, 242)
+ImageLabel_2.ScaleType = Enum.ScaleType.Slice
+ImageLabel_2.SliceCenter = Rect.new(45, 45, 45, 45)
+ImageLabel_2.SliceScale = 0.750
+
+Module.Name = "Module"
+Module.Parent = ImageLabel_2
+Module.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+Module.BorderSizePixel = 0
+Module.Position = UDim2.new(0.0802164823, 0, 0.238533497, 0)
+Module.Size = UDim2.new(0, 140, 0, 41)
+Module.Font = Enum.Font.GothamSemibold
+Module.Text = "Module"
+Module.TextColor3 = Color3.fromRGB(255, 255, 255)
+Module.TextSize = 13.000
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = Module
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = Selector
+
+TextLabel.Parent = Selector
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 324, 0, 32)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Pick a style"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+Frame_2.Parent = Selector
+Frame_2.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0450141802, 0, 0.156097561, 0)
+Frame_2.Size = UDim2.new(0, 139, 0, 103)
+
+ImageLabel_3.Parent = Frame_2
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.288642645, 0, 0.232005596, 0)
+ImageLabel_3.Size = UDim2.new(0, 54, 0, 54)
+ImageLabel_3.Image = "rbxassetid://7733945018"
+ImageLabel_3.ImageColor3 = Color3.fromRGB(88, 101, 242)
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = Frame_2
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 139, 0, 23)
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Block"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+Frame_3.Parent = Selector
+Frame_3.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.52477783, 0, 0.156097561, 0)
+Frame_3.Size = UDim2.new(0, 139, 0, 103)
+
+ImageLabel_4.Parent = Frame_3
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.303996801, 0, 0.232005596, 0)
+ImageLabel_4.Rotation = 180.000
+ImageLabel_4.Size = UDim2.new(0, 54, 0, 54)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=6035078892"
+ImageLabel_4.ImageColor3 = Color3.fromRGB(88, 101, 242)
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = Frame_3
+
+TextLabel_3.Parent = Frame_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.00400438905, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 139, 0, 23)
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "Module"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+Shadow2.Name = "Shadow2"
+Shadow2.Parent = Loader
+Shadow2.AnchorPoint = Vector2.new(0.5, 0.5)
+Shadow2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Shadow2.BackgroundTransparency = 1.000
+Shadow2.Position = UDim2.new(0.499881208, 0, 0.483672798, 10)
+Shadow2.Size = UDim2.new(0, 346, 0, 206)
+Shadow2.Image = "rbxassetid://9313765853"
+Shadow2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow2.ImageTransparency = 0.400
+Shadow2.ScaleType = Enum.ScaleType.Slice
+Shadow2.SliceCenter = Rect.new(45, 45, 45, 45)
+Shadow2.SliceScale = 1.300
+
+KeySystem.Name = "KeySystem"
+KeySystem.Parent = Shadow2
+KeySystem.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KeySystem.BackgroundTransparency = 1.000
+KeySystem.BorderSizePixel = 0
+KeySystem.Position = UDim2.new(-0.349614382, 0, -0.138211384, 0)
+KeySystem.Size = UDim2.new(0, 532, 0, 351)
+
+Input.Name = "Input"
+Input.Parent = KeySystem
+Input.BackgroundColor3 = Color3.fromRGB(44, 48, 52)
+Input.BorderSizePixel = 0
+Input.Position = UDim2.new(0.293313056, 0, 0.136752129, 0)
+Input.Size = UDim2.new(0, 275, 0, 165)
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = Input
+
+Frame_4.Parent = Input
+Frame_4.BackgroundColor3 = Color3.fromRGB(39, 43, 47)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0.641979873, 0)
+Frame_4.Size = UDim2.new(0, 275, 0, 59)
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = Frame_4
+
+ImageLabel_5.Parent = Frame_4
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.114727274, 0, -0.796999991, 38)
+ImageLabel_5.Size = UDim2.new(0, 210, 0, 79)
+ImageLabel_5.Image = "rbxassetid://9313765853"
+ImageLabel_5.ImageColor3 = Color3.fromRGB(88, 101, 242)
+ImageLabel_5.ScaleType = Enum.ScaleType.Slice
+ImageLabel_5.SliceCenter = Rect.new(45, 45, 45, 45)
+ImageLabel_5.SliceScale = 0.750
+
+CheckKey.Name = "CheckKey"
+CheckKey.Parent = ImageLabel_5
+CheckKey.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+CheckKey.BorderSizePixel = 0
+CheckKey.Position = UDim2.new(0.0975942239, 0, 0.225875348, 0)
+CheckKey.Size = UDim2.new(0, 165, 0, 41)
+CheckKey.Font = Enum.Font.GothamSemibold
+CheckKey.Text = "Enter"
+CheckKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+CheckKey.TextSize = 13.000
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = CheckKey
+
+KeyInput.Name = "KeyInput"
+KeyInput.Parent = Input
+KeyInput.BackgroundColor3 = Color3.fromRGB(34, 38, 42)
+KeyInput.BorderSizePixel = 0
+KeyInput.Position = UDim2.new(0.0618181862, 0, 0.291979849, 0)
+KeyInput.Size = UDim2.new(0, 240, 0, 41)
+KeyInput.Font = Enum.Font.GothamSemibold
+KeyInput.PlaceholderText = "Enter key here..."
+KeyInput.Text = ""
+KeyInput.TextColor3 = Color3.fromRGB(133, 139, 140)
+KeyInput.TextSize = 12.000
+
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = KeyInput
+
+TextLabel_4.Parent = Input
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Size = UDim2.new(0, 275, 0, 45)
+TextLabel_4.Font = Enum.Font.GothamSemibold
+TextLabel_4.Text = "Spectre Key System"
+TextLabel_4.TextColor3 = Color3.fromRGB(133, 139, 140)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeColor3 = Color3.fromRGB(133, 139, 140)
+
+UICorner_11.CornerRadius = UDim.new(0, 3)
+UICorner_11.Parent = KeySystem
+
+-- Scripts:
+
+local function FNYLG_fake_script() -- Block.LocalScript 
+	local script = Instance.new('LocalScript', Block)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync "https://raw.githubusercontent.com/UncappedLegacy/InternalUI-1/main/GUI", "GUI")()
+		script.Parent.Parent.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(FNYLG_fake_script)()
+local function UFKYTNU_fake_script() -- Module.LocalScript 
+	local script = Instance.new('LocalScript', Module)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync "https://raw.githubusercontent.com/UncappedLegacy/InternalUI-1/main/Module", "Module")()
+		script.Parent.Parent.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(UFKYTNU_fake_script)()
+local function QHCAKRR_fake_script() -- CheckKey.LocalScript 
+	local script = Instance.new('LocalScript', CheckKey)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.Parent.KeyInput.Text == Key then
+			script.Parent.Parent.Parent.Parent.Parent.Parent.KeySystem.Visible = false
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Shadow.Visible = true
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Shadow2.Visible = false
+			writefile("Key.txt", Key)
+			
+		else
+			script.Parent.Parent.Parent.Parent.KeyInput.Text = ""
+			script.Parent.Parent.Parent.Parent.KeyInput.PlaceholderText = "Incorrect Key..."
+		end
+	end)
+end
+coroutine.wrap(QHCAKRR_fake_script)()
